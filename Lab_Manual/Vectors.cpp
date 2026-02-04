@@ -21,5 +21,10 @@ int main (){
     for(size_t i = 0; i < vec.size(); i++){
         cout << "Element at index " << i << ": " << vec[i] << endl;
     }
+
+    //frint , last and at
+    cout << "First element: " << vec.front() << endl;
+    cout << "Last element: " << vec.back() << endl;
+    cout << "Element at index 0 using at(): " << vec.at(0) << endl;
     return 0;
 }
