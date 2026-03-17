@@ -7,10 +7,10 @@ class triangle
     int base, height;
     
     public:
-    triangle(int height, int base)
+    triangle(int a, int b)
     {
-        base = base;
-        height = height;
+        height = a;
+        base = b;
     }
 
     void setdata(int b, int h)
