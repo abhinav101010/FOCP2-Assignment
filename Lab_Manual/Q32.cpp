@@ -1,19 +1,12 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main (){
-    int arr[5];
-    int largest = 0, second_largest = 0;
-    cout << "Enter 5 integers:" << endl;
-    for(int i = 0; i < 5; i++){
-        cin >> arr[i];
-        if(arr[i] > largest){
-            second_largest = largest;
-            largest = arr[i];
-        }
-        else if(arr[i] > second_largest && arr[i] < largest){
-            second_largest = arr[i];
-        }
+int main(){
+    int a[5]; 
+    for(int i=0;i<5;i++) cin>>a[i];
+    int f=-1e9,s=-1e9;
+    for(int i=0;i<5;i++){
+        if(a[i]>f){s=f;f=a[i];}
+        else if(a[i]>s) s=a[i];
     }
-    cout << "Second largest number: " << second_largest << endl;
-    return 0;       }
+    cout<<"Largest: "<<f<<"\nSecond largest: "<<s;
+}
